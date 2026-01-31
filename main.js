@@ -2,8 +2,19 @@ const generateButton = document.getElementById('generate-button');
 const numbersContainer = document.getElementById('numbers-container');
 const themeToggleButton = document.getElementById('theme-toggle-button');
 
+const setButtonText = () => {
+    if (document.body.classList.contains('dark-mode')) {
+        themeToggleButton.textContent = 'White Mode';
+    } else {
+        themeToggleButton.textContent = 'Dark Mode';
+    }
+}
+
+setButtonText();
+
 themeToggleButton.addEventListener('click', () => {
     document.body.classList.toggle('dark-mode');
+    setButtonText();
 });
 
 generateButton.addEventListener('click', () => {

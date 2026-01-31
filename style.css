@@ -3,12 +3,16 @@
     --text-color: #000;
     --border-color: #ccc;
     --powerball-bg-color: #ffc107;
+    --button-bg-color: #f0f0f0;
+    --button-shadow-color: #a0a0a0;
 }
 
 body.dark-mode {
     --background-color: #333;
     --text-color: #fff;
     --border-color: #666;
+    --button-bg-color: #555;
+    --button-shadow-color: #222;
 }
 
 body {
@@ -21,8 +25,23 @@ body {
     margin-top: 50px;
 }
 
-#theme-toggle-button {
-    margin-bottom: 20px;
+.theme-toggle-container {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+h1 {
+    text-shadow: 2px 2px 4px var(--button-shadow-color);
+}
+
+#generate-button {
+    background-color: var(--button-bg-color);
+    border: 1px solid var(--border-color);
+    box-shadow: 2px 2px 4px var(--button-shadow-color);
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
 }
 
 #numbers-container {
