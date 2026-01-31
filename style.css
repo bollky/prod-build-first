@@ -1,9 +1,28 @@
+:root {
+    --background-color: #fff;
+    --text-color: #000;
+    --border-color: #ccc;
+    --powerball-bg-color: #ffc107;
+}
+
+body.dark-mode {
+    --background-color: #333;
+    --text-color: #fff;
+    --border-color: #666;
+}
+
 body {
+    background-color: var(--background-color);
+    color: var(--text-color);
     font-family: sans-serif;
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-top: 50px;
+}
+
+#theme-toggle-button {
+    margin-bottom: 20px;
 }
 
 #numbers-container {
@@ -15,7 +34,7 @@ body {
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    border: 1px solid #ccc;
+    border: 1px solid var(--border-color);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -24,5 +43,5 @@ body {
 }
 
 .powerball {
-    background-color: #ffc107;
+    background-color: var(--powerball-bg-color);
 }

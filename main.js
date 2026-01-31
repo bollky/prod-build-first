@@ -1,5 +1,10 @@
 const generateButton = document.getElementById('generate-button');
 const numbersContainer = document.getElementById('numbers-container');
+const themeToggleButton = document.getElementById('theme-toggle-button');
+
+themeToggleButton.addEventListener('click', () => {
+    document.body.classList.toggle('dark-mode');
+});
 
 generateButton.addEventListener('click', () => {
     numbersContainer.innerHTML = '';
