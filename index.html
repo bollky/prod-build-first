@@ -1,38 +1,42 @@
 <!doctype html>
-<html lang="en">
+<html lang="ko">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Lotto 6/45 Generator</title>
+  <title data-i18n-key="lottoTitle">로또 6/45 번호 생성기</title>
   <link href='/style.css' rel='stylesheet'>
 </head>
 <body>
 
   <nav class="navbar">
-    <a href="/index.html">Lotto Generator</a>
-    <a href="/calculator.html">Salary Calculator</a>
-    <a href="/contact.html">Contact</a>
-    <div class="theme-toggle-container">
-      <button id="theme-toggle-button">Toggle Theme</button>
+    <a href="/index.html" data-i18n-key="navLottoGenerator">로또 번호 생성기</a>
+    <a href="/calculator.html" data-i18n-key="navSalaryCalculator">연봉 계산기</a>
+    <a href="/contact.html" data-i18n-key="navContact">제휴 문의</a>
+    <div class="controls-container">
+      <button id="lang-toggle-button" data-i18n-key="langToggle">English</button>
+      <div class="theme-toggle-container">
+        <button id="theme-toggle-button">다크 모드</button>
+      </div>
     </div>
   </nav>
 
   <main class="content">
     <section id="generator">
-      <h1>Lotto 6/45 Generator</h1>
+      <h1 data-i18n-key="lottoTitle">로또 6/45 번호 생성기</h1>
       <div class="generator-controls">
-        <label for="lotto-sets">Number of Sets:</label>
+        <label for="lotto-sets" data-i18n-key="lottoSetsLabel">생성 개수:</label>
         <select id="lotto-sets">
           <option value="1">1</option>
           <option value="5" selected>5</option>
           <option value="10">10</option>
         </select>
-        <button id="generate-button">Generate Numbers</button>
+        <button id="generate-button" data-i18n-key="lottoGenerateButton">번호 생성</button>
       </div>
       <div id="numbers-container"></div>
     </section>
   </main>
 
+  <script defer type="text/javascript" src="/i18n.js"></script>
   <script defer type="text/javascript" src="/main.js"></script>
 </body>
 </html>

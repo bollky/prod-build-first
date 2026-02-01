@@ -127,10 +127,12 @@ if (calculateSalaryButton) {
 const themeToggleButton = document.getElementById('theme-toggle-button');
 
 const setButtonText = () => {
-    if (document.body.classList.contains('dark-mode')) {
-        themeToggleButton.textContent = 'White Mode';
+    const currentLang = localStorage.getItem('language') || 'ko';
+    const isDarkMode = document.body.classList.contains('dark-mode');
+    if (currentLang === 'ko') {
+        themeToggleButton.textContent = isDarkMode ? '화이트 모드' : '다크 모드';
     } else {
-        themeToggleButton.textContent = 'Dark Mode';
+        themeToggleButton.textContent = isDarkMode ? 'White Mode' : 'Dark Mode';
     }
 }
 

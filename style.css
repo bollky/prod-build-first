@@ -45,10 +45,17 @@ body {
     background-color: var(--background-color);
 }
 
-.navbar .theme-toggle-container {
+.navbar .controls-container {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
     position: absolute;
     top: 15px;
     right: 15px;
+}
+
+.navbar .theme-toggle-container {
+    /* No longer needs position absolute */
 }
 
 /* General Content Styles */
