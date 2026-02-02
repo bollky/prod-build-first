@@ -3,6 +3,7 @@ const translations = {
         // Navbar
         navLottoGenerator: "Lotto Generator",
         navSalaryCalculator: "Salary Calculator",
+        navSalaryTable: "Salary by year",
         navContact: "Contact",
         // Theme Toggle
         themeToggleWhite: "White Mode",
@@ -50,6 +51,7 @@ const translations = {
         // Navbar
         navLottoGenerator: "로또 번호 생성기",
         navSalaryCalculator: "연봉 계산기",
+        navSalaryTable: "연봉별 실수령액",
         navContact: "제휴 문의",
         // Theme Toggle
         themeToggleWhite: "화이트 모드",
